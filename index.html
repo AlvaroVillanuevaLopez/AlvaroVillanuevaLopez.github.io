@@ -4,31 +4,75 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Álvaro Villanueva López - Presentación</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
         <link rel="stylesheet" href="alvaro-villanueva-lopez-styles.css" />
     </head>
-    <body>
-        <header>
-            <h1>Álvaro Villanueva López</h1>
-            <p class="linea-cabecera">
-                Desarrollador Web Full Stack | Técnico Administrador de Sistemas
-                y Redes
-            </p>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="#¿quien-soy?">¿Quien soy?</a></li>
-                    <li><a href="#tecnologias">Tecnologías</a></li>
-                    <li><a href="#experiencia">Experiencia</a></li>
-                    <li><a href="#contacto">Contacto</a></li>
-                </ul>
-            </nav>
+    <body class="bg-aliceblue">
+        <header
+            class="custom-header d-flex align-items-center justify-content-center text-center text-white"
+        >
+            <div class="container">
+                <div id="bienvenido">
+                    <h2 class="display-7 fw-bold">Bienvenido, mi nombre es</h2>
+                </div>
+                <h1 class="display-1 fw-bold">Álvaro Villanueva López</h1>
+                <p class="linea-cabecera fs-4 fw-light">
+                    Desarrollador Web Full Stack | Técnico Administrador de
+                    Sistemas y Redes
+                </p>
+            </div>
         </header>
-
-        <main class="contenedor">
-            <div class="contenido-principal">
-                <section id="¿quien-soy?" class="presentation-section">
-                    <div class="presentation-text">
-                        <h2>¿Quién soy yo?</h2>
-                        <p id="redactado">
+        <nav
+            class="navbar navbar-expand-md navbar-dark fixed-top custom-navbar"
+        >
+            <div class="container">
+                <button
+                    class="navbar-toggler ms-auto"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                    class="collapse navbar-collapse justify-content-center"
+                    id="navbarNav"
+                >
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#quien-soy"
+                                >¿Quién soy?</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tecnologias"
+                                >Tecnologías</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#experiencia"
+                                >Experiencia</a
+                            >
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <main class="container my-5">
+            <div class="row g-4">
+                <div class="col-lg-8 order-2 order-lg-1">
+                    <section
+                        id="quien-soy"
+                        class="card shadow-sm border-0 p-4 mb-4"
+                    >
+                        <h2 class="text-primary mb-3">¿Quién soy yo?</h2>
+                        <p class="text-justify">
                             Hola, me presento. Soy Álvaro Villanueva López, un
                             entusiasta en el mundo la informática. Tras
                             finalizar el Grado Superior en ASIR (Administración
@@ -47,39 +91,59 @@
                             mis habilidades como desarrollador y/o administrador
                             de sistemas y redes.
                         </p>
-                    </div>
-                </section>
+                    </section>
 
-                <section id="tecnologias" class="presentation-section">
-                    <div class="presentation-text">
-                        <h2>Tecnologías Destacadas</h2>
+                    <section
+                        id="tecnologias"
+                        class="card shadow-sm border-0 p-4 mb-4"
+                    >
+                        <h2 class="text-primary mb-3">
+                            Tecnologías Destacadas
+                        </h2>
                         <p>
                             Algunas de las tecnologías que he estudiado a fondo,
                             además de redes y sistemas Linux/Windows:
                         </p>
-                        <div class="tecnologias">
-                            <h3>Frontend</h3>
-                            <div class="tecnologias-logos">
+
+                        <div class="mt-4">
+                            <h3
+                                class="h5 border-start border-info border-4 ps-2 mb-3"
+                            >
+                                Frontend
+                            </h3>
+                            <div
+                                class="d-flex flex-wrap gap-4 align-items-center tech-logos"
+                            >
                                 <img src="fotos/html.png" alt="HTML5" />
                                 <img src="fotos/css.png" alt="CSS" />
                                 <img src="fotos/js.png" alt="JavaScript" />
                             </div>
                         </div>
 
-                        <div class="tecnologias">
-                            <h3>Backend</h3>
-                            <div class="tecnologias-logos">
+                        <div class="mt-4">
+                            <h3
+                                class="h5 border-start border-info border-4 ps-2 mb-3"
+                            >
+                                Backend
+                            </h3>
+                            <div
+                                class="d-flex flex-wrap gap-4 align-items-center tech-logos"
+                            >
                                 <img src="fotos/php.png" alt="PHP" />
                                 <img src="fotos/java.webp" alt="Java" />
                                 <img src="fotos/sql.png" alt="SQL" />
                             </div>
                         </div>
-                    </div>
-                </section>
-                <section id="experiencia" class="presentation-section">
-                    <div class="presentation-text">
-                        <h2>Experiencia Profesional</h2>
-                        <p id="redactado">
+                    </section>
+
+                    <section
+                        id="experiencia"
+                        class="card shadow-sm border-0 p-4 mb-4"
+                    >
+                        <h2 class="text-primary mb-3">
+                            Experiencia Profesional
+                        </h2>
+                        <p class="text-justify">
                             A pesar de que aún me sigo formandome en el sector,
                             poseo experiencia profesional en el sector como
                             técnico "Service Desk" y administración de usuarios,
@@ -94,59 +158,64 @@
                             profesional para aplicar mis conocimientos
                             transversales en un equipo dinámico y competente.
                         </p>
-                    </div>
-                </section>
-                <section id="contacto" class="presentation-section">
-                    <div class="presentation-text">
-                        <h2>Contacto y Redes</h2>
-                        <p id="redactado">
+                    </section>
+
+                    <section
+                        id="contacto"
+                        class="card shadow-sm border-0 p-4 mb-4"
+                    >
+                        <h2 class="text-primary mb-3">Contacto y Redes</h2>
+                        <p>
                             Si crees que mi perfil encaja o simplemente quieres
                             intercambiar ideas sobre el sector, no dudes en
                             contacterme. Podrás descargar mi CV en el botón de
                             abajo. Estoy abierto a nuevas ideas y oportunidades.
                             Nos vemos.
                         </p>
-                        <div class="tecnologias-logos">
+                        <div class="d-flex flex-wrap gap-4 tech-logos mt-3">
                             <a
                                 href="https://www.linkedin.com/in/alvaro-villanueva-lopez/"
                                 target="_blank"
-                            >
-                                <img src="fotos/linkedin.png" alt="LinkedIn" />
-                            </a>
+                                ><img src="fotos/linkedin.png" alt="LinkedIn"
+                            /></a>
                             <a
                                 href="https://github.com/AlvaroVillanuevaLopez"
                                 target="_blank"
-                            >
-                                <img src="fotos/github.webp" alt="GitHub" />
-                            </a>
-                            <a href="mailto:alvarovillanuevalopez@gmail.com">
-                                <img src="fotos/correo.webp" alt="Email" />
-                            </a>
-                            <a
-                                href="documentos/curriculum.pdf"
-                                download
-                                class="btn-cv"
-                            >
-                                <img
+                                ><img src="fotos/github.webp" alt="GitHub"
+                            /></a>
+                            <a href="mailto:alvarovillanuevalopez@gmail.com"
+                                ><img src="fotos/correo.webp" alt="Email"
+                            /></a>
+                            <a href="documentos/curriculum.pdf" download
+                                ><img
                                     src="fotos/descarga.webp"
                                     alt="Descargar CV"
-                                />
-                            </a>
+                            /></a>
                         </div>
-                    </div>
-                </section>
-            </div>
+                    </section>
+                </div>
 
-            <aside>
-                <img src="fotos/imagen-personal.jpeg" alt="Foto de perfil" />
-            </aside>
+                <aside class="col-lg-4 order-1 order-lg-2">
+                    <div class="text-center">
+                        <img
+                            src="fotos/imagen-personal.jpeg"
+                            alt="Foto de perfil"
+                            class="img-fluid rounded shadow border border-secondary profile-img"
+                        />
+                    </div>
+                </aside>
+            </div>
         </main>
 
-        <footer>
-            <p>
-                &copy; 2025 Álvaro Villanueva López - Perfil Profesional en el
-                Sector IT
-            </p>
+        <footer class="bg-dark text-secondary text-center py-4 mt-5">
+            <div class="container">
+                <p class="mb-0">
+                    &copy; 2025 Álvaro Villanueva López - Perfil Profesional en
+                    el Sector IT
+                </p>
+            </div>
         </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     </body>
 </html>
